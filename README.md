@@ -26,6 +26,7 @@
 - Two Drop-Down Menu will be avaliable One is Smooth Drop-Down Menu's and Sub-Menus
 - One more you can able to see at down and user can able to search in the search bar in Mens page and get the data
 - Data is rendering from the Json server 
+![alt text](https://github.com/praveen3411/Flipcart_Clone/blob/main/home-1.png)
 
 ## Fashion Page
 - Resuable navbar can be appended
@@ -35,10 +36,12 @@
 3. Favorite Brands
 4. Men's Wear
 5. Women's Wear
+![alt text](https://github.com/praveen3411/Flipcart_Clone/blob/main/fashion.png)
 
 ## Mens Page
 
 - User can able to see list of items in the page
 - User can able to search in inputbox and get the data
+![alt text](https://github.com/praveen3411/Flipcart_Clone/blob/main/menspage.png)
 
 
