@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mens-Page</title>
+    <link rel="stylesheet" href="./styles/navbar.css" />
+  </head>
+  <body>
+    <div id="barone"></div>
+    <div id="hello">
+      <a href="index.html">HOME</a>
+      <a href="mens.html">MENS-PAGE</a>
+      <a href="fashion.html">FASHION-PAGE</a>
+    </div>
+    <br />
+    <div>
+      <input
+        type="search"
+        id="boomone"
+        oninput="search_box()"
+        placeholder="Search-brands & names"
+      />
+    </div>
+    <div id="hereone">
+      <h2>see details here</h2>
+    </div>
+    <br />
+    <div id="ramarao"></div>
+  </body>
+</html>
+<script type="module">
+  let mouse = document.querySelector("#barone");
+  import { navbar } from "./components/navbar.js";
+  mouse.innerHTML = navbar();
+</script>
+<script src="./scripts/mens.js"></script>
+<script>
+  let makeithere = document.querySelector("#hereone");
+  let search_box = async () => {
+    let make = document.querySelector("#boomone").value;
+    let newfunction = takeiteone(make);
+    let giveitto = await newfunction;
+    takeitebroplz(giveitto);
+  };
+
+  let takeiteone = async (loli) => {
+    try {
+      let onetwo = await fetch(`http://localhost:5000/api/mens_page?q=${loli}`);
+      let takeit = await onetwo.json();
+      console.log(takeit);
+      makethisone(takeit);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  let makethisone = (data) => {
+    makeithere.innerHTML = null;
+    if (data === undefined) {
+      return null;
+    } else {
+      data.forEach((ele, index) => {
+        let div = document.createElement("div");
+
+        let one = document.createElement("p");
+        one.innerText = ele.brand;
+
+        div.append(one);
+        makeithere.append(div);
+      });
+    }
+  };
+</script>

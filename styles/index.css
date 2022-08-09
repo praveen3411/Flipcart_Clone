@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  width: 100%;
+  /* border: 1px solid black; */
+  background: #f5f5f5;
+  height: auto;
+  position: relative;
+}
+
+/*************** headoffer text  ***************/
+
+/* products */
+.level1 > img {
+  width: 100%;
+  cursor: pointer;
+}
+.tittle {
+  margin: auto;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 200;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+#level2 > img {
+  width: 95%;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+}
+#level3 {
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+.video {
+  display: flex;
+  width: 68%;
+  margin: auto;
+}
+
+/* ************cards part ************ */
+.cd_parent {
+  width: 95%;
+  /* height: 450px; */
+  margin: auto;
+  /* border: 1px solid black; */
+}
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  /* border: 1px solid black; */
+  margin: auto;
+  justify-content: space-evenly;
+}
+#cards > div {
+  /* border: 1px solid black; */
+  width: 20%;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* object-fit: cover; */
+  /* height: 350px; */
+  text-align: center;
+  cursor: pointer;
+}
+.cd_img > img {
+  width: 55%;
+  object-fit: contain;
+}
+.descript > p {
+  width: 80%;
+  margin: auto;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Bebas Neue", cursive;
+  margin-top: 1.5%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.descript > span {
+  font-size: 16px;
+  font-weight: 900;
+}
+.descript + button {
+  border: none;
+  color: white;
+  background: black;
+  width: 100%;
+  font-size: 16px;
+  margin-top: 5%;
+  padding: 3% 0%;
+  cursor: pointer;
+}
+.level4 {
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.level4 > div > img {
+  width: 100%;
+}
+.level4 > h2 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  cursor: text;
+}
+
+/* #cont_videos{
+    display: flex;
+    width: 60%;
+    height: 200px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#cont_videos{
+    display: block;
+    width: 15%;
+    height: 100%;
+}
+#cont_videos>video{
+    width: 100%;
+    height: 100%;
+} */
+.deals {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.deals > div {
+  width: 31%;
+  object-fit: contain;
+}
+.deals > div > img {
+  width: 100%;
+  object-fit: contain;
+}
+.gift_sets1 > img {
+  width: 100%;
+  height: 150%;
+  margin-top: 9%;
+  margin-bottom: 9%;
+}
+.scare > img {
+  height: 150%;
+}
+.level_x > div {
+  width: 23%;
+}
+.level_x > div > img {
+  width: 100%;
+}
+.line_through {
+  text-decoration: line-through;
+  color: gray;
+}
+.rd_dis {
+  color: red;
+}
+#top_pick > div {
+  width: 45%;
+}
+#praveen img{
+    width: 100%;
+    height: 600px;
+  }
+#puthere{
+  width: 90%;
+  margin-left: 100px;
+  margin: auto;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3,1fr); 
+  grid-template-rows: repeat(10,auto);
+}
+#puthere img{
+  width: 360px;
+  margin-top: 7px;
+  margin-left: 7px;
+  border-radius: 10px;
+}
+#pages h1{
+  text-align: center;
+  font-size: 40px;
+}

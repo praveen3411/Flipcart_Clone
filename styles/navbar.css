@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  width: 100%;
+  /* border: 1px solid black; */
+  background: #f5f5f5;
+  height: auto;
+  position: relative;
+}
+#whole_nav {
+  z-index: 10;
+}
+
+/*************** headoffer text  ***************/
+
+#hdoffer {
+ 
+  display: flex;
+  background:black;
+  text-align: center;
+  /* justify-content: flex-end; */
+  align-items: center;
+}
+#hdoffer > div {
+  margin: auto;
+  margin-left: 30%;
+}
+#hdoffer > div > p {
+  display: flex;
+  color: white;
+  font-size: 16px;
+  margin: 1.5% 0%;
+  text-align: center;
+  cursor: pointer;
+}
+
+/********** searchbar row********* */
+
+#cont_searchbar {
+  display: flex;
+  background: #2874f0;
+  padding: 0.8%;
+  width: 98.4%;
+  height: 40px;
+}
+#cont_searchbar > div {
+  display: flex;
+  align-items: center;
+}
+
+/************ web logo *********** */
+#logo {
+  width: 17%;
+  justify-content: center;
+}
+#logo > img {
+  margin-top: 5px;
+  margin-left: 50px;
+  cursor: pointer;
+  width: 130px;
+  height: 30px;
+}
+#log {
+  width: 15%;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/********** cartpart **********/
+#cartpg {
+  width: 8.33%;
+  justify-content: center;
+}
+#cartpg > div i {
+  color: white;
+  font-size: 20px;
+  box-sizing: border-box;
+  margin: 10px;
+}
+
+#productnos {
+  display: flex;
+}
+
+#cont_searchbar > #cartpg {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* *********searchbar  **********/
+#searchbar {
+  width: 55%;
+  margin-left: 50px;
+}
+#searchbar > input {
+  border: none;
+  outline: none;
+  width: 79%;
+  height: 100%;
+  padding: 0% 2%;
+  font-size: 15px;
+  color: gray;
+}
+
+#searchbar > button {
+  width: 18%;
+  height: 100%;
+  padding: 0% 3%;
+  border: none;
+  background: black;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+.fa-solid {
+  color: rgb(70, 70, 70);
+}
+
+/************* Navbar  *************/
+#nav {
+  width: 100%;
+  display: flex;
+  background: rgb(255, 255, 255);
+}
+
+#product_pages {
+  width: 100%;
+  font-size: 13px;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  padding: 1% 1% 1% 0%;
+  color: black;
+  justify-content: space-around;
+  cursor: pointer;
+  margin-left: 0px;
+}
+.dropdown img {
+  width: 60px;
+  height: 60px;
+  margin-left: 50px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 15%;
+}
+
+.dropdown > .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100%;
+  line-height: 25px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.dropbtn {
+  margin-left: 23px;
+  text-align: center;
+  color: black;
+  font-size: 15px;
+}
+.dropdown-content > p {
+  margin-top: 25%;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+.dropdown-content p {
+  padding: 5px;
+  box-sizing: border-box;
+  box-shadow: 1px 1px 1px 1px rgb(247, 240, 225);
+  border-radius: 5px;
+  color: black;
+}
+.dropdown-content > p:hover {
+  color: #2874f0;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropbtn:hover {
+  font-weight: bolder;
+  color: #2874f0;
+}
+#whole_nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 0.5;
+}
+/* Fashion page scrool */
+#boom img {
+  width: 100%;
+  height: 600px;
+}
+#two {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+#two div {
+  width: 170px;
+  height: auto;
+  text-align: center;
+}
+#two img {
+  width: 170px;
+  height: 200px;
+  border-radius: 10px;
+}
+#two div h3 {
+  color: black;
+}
+#two div h4 {
+  color: green;
+}
+#bo img {
+  width: 100%;
+  height: 200px;
+}
+#three {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+#three div {
+  width: 170px;
+  height: auto;
+  text-align: center;
+}
+#three img {
+  width: 170px;
+  height: 200px;
+  border-radius: 10px;
+}
+#three div h3 {
+  color: black;
+}
+#three div h4 {
+  color: green;
+}
+h2 {
+  text-align: center;
+}
+#fourfour {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+#fourfour div {
+  width: 170px;
+  height: auto;
+  text-align: center;
+}
+#fourfour img {
+  width: 170px;
+  height: 200px;
+  border-radius: 10px;
+}
+#fourfour div h3 {
+  color: black;
+}
+#fourfour div h4 {
+  color: green;
+}
+
+#five {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+#five div {
+  width: 170px;
+  height: auto;
+  text-align: center;
+}
+#five img {
+  width: 170px;
+  height: 200px;
+  border-radius: 10px;
+}
+#five div h3 {
+  color: black;
+}
+#five div h4 {
+  color: green;
+}
+
+#six {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+#six div {
+  width: 170px;
+  height: auto;
+  text-align: center;
+}
+#six img {
+  width: 170px;
+  height: 200px;
+  border-radius: 10px;
+}
+#six div h3 {
+  color: black;
+}
+#six div h4 {
+  color: green;
+}
+#hello {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  padding: 10px;
+  background-color: rgb(181, 226, 211);
+}
+#hello a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+#hello a:hover {
+  color: #2874f0;
+}
+#ramarao {
+  width: 99.5%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(10, auto);
+}
+#ramarao div {
+  width: 300px;
+  height: auto;
+}
+#ramarao img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+#ramarao h3 {
+  text-align: center;
+  line-height: 2rem;
+}
+#ramarao #pora {
+  color: green;
+}
+#ramarao button {
+  text-align: center;
+  transform: translateX(90px);
+  padding: 5px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+#ramarao button:hover {
+  background: linear-gradient(to left, #59c173, #a17fe0, #5d26c1);
+}
+
+#boomone{
+  width: 500px;
+  padding: 10px;
+  margin: 20px;
+  margin-left: 380px;
+  border-radius: 5px;
+  border-top-color: #a17fe0;
+  border-bottom-color: #a17fe0;
+  text-align: center;
+}
+#hereone{
+  width: 300px;
+  height: 100px;
+  margin: auto;
+  overflow: scroll;
+  border-radius: 5px;
+  border: 2px solid black;
+  border-top-color: #a17fe0;
+  border-bottom-color: #a17fe0;
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/navbar.css" />
+  </head>
+  <body>
+    <div id="navbarone"></div>
+    <!-- Slider -->
+    <div id="hello">
+        <div id="hello">
+            <a href="index.html">HOME</a>
+            <a href="mens.html">MENS-PAGE</a>
+            <a href="fashion.html">FASHION-PAGE</a>
+          </div>
+    </div>
+    <div id="sliderone">
+      <div id="boom">
+        <img
+          src="https://images.pexels.com/photos/4127449/pexels-photo-4127449.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt=""
+        />
+      </div>
+    </div>
+    <!-- First One -->
+    <div id="two"></div>
+    <!-- Second One -->
+    <div id="bo">
+      <img
+        src="https://rukminim1.flixcart.com/fk-p-flap/500/500/image/aa908a8868dcf274.jpg?q=100"
+        alt=""
+      />
+    </div>
+    <h2>Great Deals Festival Wear</h2>
+    <div id="three"></div>
+    <h2>Fashion Deals</h2>
+    <br />
+    <!-- Four -->
+    <div id="fourfour"></div>
+    <!-- Five -->
+    <br />
+    <h2>Your Favorite Brands Deals</h2>
+    <br />
+    <div id="five"></div>
+    <br />
+    <h2>Brands Under Your Budget</h2>
+    <br />
+    <div id="six"></div>
+  </body>
+</html>
+<script type="module">
+  import { navbar } from "./components/navbar.js";
+  let navbarone = document.querySelector("#navbarone");
+  navbarone.innerHTML = navbar();
+</script>
+<script src="./scripts/fashion.js" type="module"></script>
+
+<script>
+  let twotwo = document.querySelector("#three");
+  let functionone = async () => {
+    try {
+      let bro = await fetch(`http://localhost:5000/api/fashion_page`);
+      let broone = await bro.json();
+      sendtoanotherfunction(broone[0].festival_wear);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  functionone();
+
+  let sendtoanotherfunction = (data) => {
+    data.forEach((ele, index) => {
+      let create = document.createElement("div");
+
+      let oneonee = document.createElement("img");
+      oneonee.setAttribute("src", ele.img);
+
+      let onetwo = document.createElement("h3");
+      onetwo.innerHTML = ele.brand;
+
+      let onethree = document.createElement("h4");
+      onethree.innerText = ele.offer;
+
+      let onefour = document.createElement("p");
+      onefour.innerText = ele.name;
+
+      create.append(oneonee, onetwo, onethree, onefour);
+
+      twotwo.append(create);
+    });
+  };
+
+  //   Third
+
+  let fourfour = document.querySelector("#fourfour");
+  let functionthird = async () => {
+    try {
+      let bro = await fetch(`http://localhost:5000/api/fashion_page`);
+      let broone = await bro.json();
+      funthird(broone[0].most_populat);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  functionthird();
+
+  let funthird = (data) => {
+    data.forEach((ele, index) => {
+      let create = document.createElement("div");
+
+      let oneonee = document.createElement("img");
+      oneonee.setAttribute("src", ele.img);
+
+      let onetwo = document.createElement("h3");
+      onetwo.innerHTML = ele.brand;
+
+      let onethree = document.createElement("h4");
+      onethree.innerText = ele.offer;
+
+      let onefour = document.createElement("p");
+      onefour.innerText = ele.name;
+
+      create.append(oneonee, onetwo, onethree, onefour);
+
+      fourfour.append(create);
+    });
+  };
+
+  //five
+  let five = document.querySelector("#five");
+  let functionfive = async () => {
+    try {
+      let bro = await fetch(`http://localhost:5000/api/fashion_page`);
+      let broone = await bro.json();
+      funfive(broone[0].deals);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  functionfive();
+
+  let funfive = (data) => {
+    data.forEach((ele, index) => {
+      let create = document.createElement("div");
+
+      let oneonee = document.createElement("img");
+      oneonee.setAttribute("src", ele.img);
+
+      let onetwo = document.createElement("h3");
+      onetwo.innerHTML = ele.brand;
+
+      let onethree = document.createElement("h4");
+      onethree.innerText = ele.offer;
+
+      let onefour = document.createElement("p");
+      onefour.innerText = ele.name;
+
+      create.append(oneonee, onetwo, onethree, onefour);
+
+      five.append(create);
+    });
+  };
+
+  let six = document.querySelector("#six");
+  let functionsix = async () => {
+    try {
+      let bro = await fetch(`http://localhost:5000/api/fashion_page`);
+      let broone = await bro.json();
+      funsix(broone[0].under_buget);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  functionsix();
+
+  let funsix = (data) => {
+    data.forEach((ele, index) => {
+      let create = document.createElement("div");
+
+      let oneonee = document.createElement("img");
+      oneonee.setAttribute("src", ele.img);
+
+      let onetwo = document.createElement("h3");
+      onetwo.innerHTML = ele.brand;
+
+      let onethree = document.createElement("h4");
+      onethree.innerText = ele.offer;
+
+      let onefour = document.createElement("p");
+      onefour.innerText = ele.name;
+
+      create.append(oneonee, onetwo, onethree, onefour);
+
+      six.append(create);
+    });
+  };
+</script>

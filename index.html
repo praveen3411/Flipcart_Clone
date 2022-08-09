@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlipCart Assignment</title>
+    <link
+      rel="shortcut icon"
+      href="https://imgs.search.brave.com/wKDznBQYc6QzQp5PqbI-2unPsDo7Gnssxp-ruMgNsoQ/rs:fit:200:225:1/g:ce/aHR0cHM6Ly90c2Uy/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC50/bVBfYkNWMmFGY1Z4/QkF2a21RS2hnQUFB/QSZwaWQ9QXBp"
+      width="50px"
+      height="50px"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <script
+      src="https://kit.fontawesome.com/173cb482a3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- ****************************************navbar**************************************** -->
+    <div id="attachhere"></div>
+    <div id="hello">
+      <a href="index.html">HOME</a>
+      <a href="mens.html">MENS-PAGE</a>
+      <a href="fashion.html">FASHION-PAGE</a>
+    </div>
+    <div id="praveen">
+      <img
+        src="https://images.pexels.com/photos/1485781/pexels-photo-1485781.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt=""
+      />
+    </div>
+    <!-- Home Page with JSON server -->
+    <div id="pages" onclick="indexpage()">
+      <h1>💫 SHOP NOW GRAB THE SALE 💫</h1>
+      <!-- First One -->
+      <div id="puthere"></div>
+    </div>
+  </body>
+</html>
+<script type="module">
+  import { navbar } from "./components/navbar.js";
+  let attachhere = document.querySelector("#attachhere");
+  attachhere.innerHTML = navbar();
+</script>
+<script src="./scripts/index.js"></script>
